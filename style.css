@@ -7,6 +7,8 @@
     --titulo: 'Barlow Condensed', sans-serif;
     --texto: 'PT Sans', Verdana, sans-serif;
     --secundario: 'Oswald', sans-serif;
+
+    --verde-primario: rgb(19, 82, 3);
 }
 
 * {
@@ -19,7 +21,7 @@ html {
 }
 
 body {
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 nav {
@@ -67,20 +69,14 @@ nav li a {
 nav li a:hover {
     color: black;
     text-decoration: none;
-    font-weight: 350;
-    color: rgb(12, 53, 2);
+    font-weight: 500;
+    color: var(--verde-primario);
 }
 
 section {
     padding: 40px;
 }
 
-h1 {
-    margin: 50px 0;
-    font-family: var(--titulo);
-    font-size: 4em;
-    font-weight: 500;
-}
 
 li {
     font-family: var(--secundario);
@@ -96,6 +92,89 @@ h2 {
 
 p {
     font-family: var(--texto);
+}
+
+#inicio-section {
+    padding-right: 0;
+    padding-left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-texto-inicio {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#container-texto-inicio h1 {
+    font-family: var(--titulo);
+    margin-bottom: 50px;
+    font-size: 10em;
+    font-weight: 500;
+}
+
+#container-texto-inicio p {
+    font-size: 3em;
+    font-family: var(--secundario);
+    font-weight: 100;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 90vh;
+    display: none;
+    object-fit: cover;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slider button {
+    position: absolute;
+    height: 100%;
+    width: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.slider button:hover {
+    opacity: 1;
+}
+
+.slider-prev {
+    left: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 5%, #ffffff80 100%);
+}
+
+.slider-next {
+    right: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff80 100%);
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
 }
 
 #servicos-section {
@@ -137,6 +216,7 @@ p {
 .product-name {
     padding: 0;
     margin: 0;
+    text-shadow: 1px 1px 1px rgba(19, 82, 3, 0.7);
 }
 
 .product-description {
@@ -240,13 +320,22 @@ p {
     
 }
 
+#div-contato div {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
 #div-endereco {
     text-align: center;
     line-height: 1.5;
     text-align: left;
 }
 
-#div-endereco p {
+#div-endereco div p {
     margin-bottom: 20px;
 }
 
@@ -266,5 +355,5 @@ footer {
     font-weight: bold;
     padding: 5px;
     color: white;
-    background-color: rgb(12, 53, 2);
+    background-color: var(--verde-primario);
 }

@@ -20,8 +20,20 @@
 
     <main>
         <section id="inicio-section">
-            <h1>HUT ENGENHARIA</h1>
-            <p>Soluções sob medida para seu projeto</p>
+            <div id="container-texto-inicio">
+                <h1>HUT ENGENHARIA</h1>
+                <p>Inovação e sustentabilidade em soluções para sua empresa</p>
+            </div>
+
+            <div class="slider">
+                <div class="slides">
+                    <img src="imgs/engenheiro.jpg" alt="Engenheiro estudando" class="slide">
+                    <img src="imgs/wield-cortado.jpg" alt="Engenheiro estudando" class="slide">
+                    <img src="imgs/estrutura.jpg" alt="Engenheiro estudando" class="slide">
+                </div>
+                <button class="slider-prev" onclick="prevSlide()">&#10094</button>
+                <button class="slider-next" onclick="nextSlide()">&#10095</button>
+            </div>
         </section>
         <section id="sobre-section">
             <h2 class="session-title">Sobre nós</h2>
@@ -125,9 +137,18 @@
                     <img src="imgs/logo-hut.jpg" alt="">
                 </div>
                 <div id="div-contato">
-                    <p><span class="contact-tag">Telefone: </span>(35) 3042-1921</p>
-                    <p><span class="contact-tag">Whatsapp: </span>(35) 96161-1921</p>
-                    <p><span class="contact-tag">E-mail: </span>hutengenharia@gmail.com</p>
+                    <div>
+                        <img class="info-icon" src="imgs/telephone.svg" alt="">
+                        <p><span class="contact-tag">Telefone: </span>(35) 3042-1921</p>
+                    </div>
+                    <div>
+                        <img class="info-icon" src="imgs/whatsapp-vazado.svg" alt="">
+                        <p><span class="contact-tag">Whatsapp: </span>(35) 96161-1921</p>
+                    </div>
+                    <div>
+                        <img class="info-icon" src="imgs/email.svg" alt="">
+                        <p><span class="contact-tag">E-mail: </span>hutengenharia@gmail.com</p>
+                    </div>
                     <p></p>
                 </div>
         
