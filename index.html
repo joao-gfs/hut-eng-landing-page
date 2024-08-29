@@ -27,27 +27,63 @@
 
             <div class="slider">
                 <div class="slides">
+                    <img src="imgs/projeto.jpg" alt="Grupo de projeto" class="slide">
                     <img src="imgs/engenheiro.jpg" alt="Engenheiro estudando" class="slide">
                     <img src="imgs/wield-cortado.jpg" alt="Solda" class="slide">
-                    <img src="imgs/projeto.jpg" alt="Grupo de projeto" class="slide">
                     <img src="imgs/estrutura.jpg" alt="Estrutura metalica" class="slide">
                 </div>
                 <button class="slider-prev" onclick="prevSlide()">&#139</button>
                 <button class="slider-next" onclick="nextSlide()">&#155</button>
             </div>
         </section>
+
         <section id="sobre-section">
             <h2 class="session-title">Sobre nós</h2>
-            <p>A HUT Engenharia está situada em Itajubá, no Sul de Minas.</p>
-            <p>Através de seu corpo técnico, cria soluções de engenharia para a indústria brasileira.</p>
+            <div id="sobre-intro">
+                <p>A HUT Engenharia está situada em Itajubá, no Sul de Minas.</p>
+            </div>
+
+            <div id="sobre-container">
+                <div class="info-box">
+                    <div class="info-box-head">
+                        <img src="imgs/email.svg" alt="">
+                        <h3>Expertise</h3>
+                    </div>
+                    <p>Nossa equipe é o coração do nosso empreendimento. Composta por profissionais altamente qualificados e apaixonados pelo que fazem, temos uma combinação única de experiência e conhecimento técnico. Cada membro da nossa equipe é dedicado a entregar soluções que atendem às necessidades específicas de cada cliente, garantindo que todos os projetos sejam executados com precisão e excelência.</p>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-box-head">
+                        <img src="imgs/email.svg" alt="">
+                        <h3>Qualidade</h3>
+                    </div>
+                    <p>Nosso compromisso com a qualidade é inegociável. Em todos os aspectos do nosso trabalho, desde o planejamento até a execução, aplicamos rigorosos padrões de controle de qualidade. Acreditamos que cada detalhe faz a diferença, e é por isso que nossos processos são desenhados para garantir resultados que não apenas atendem, mas superam as expectativas.</p>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-box-head">
+                        <img src="imgs/email.svg" alt="">
+                        <h3>Inovação</h3>
+                    </div>
+                    <p>Estamos na vanguarda da engenharia moderna. A inovação está no centro de tudo o que fazemos, impulsionando-nos a buscar continuamente novas soluções e tecnologias para enfrentar os desafios mais complexos. Nossa abordagem criativa e orientada para o futuro nos permite oferecer projetos que são tanto eficientes quanto revolucionários.</p>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-box-head">
+                        <img src="imgs/email.svg" alt="">
+                        <h3>Sustentabilidade</h3>
+                    </div>
+                    <p>Construímos com o futuro em mente. Nosso compromisso com a sustentabilidade é refletido em cada decisão que tomamos. Buscamos integrar práticas sustentáveis em nossos projetos, utilizando materiais e métodos que minimizam o impacto ambiental e promovem o desenvolvimento responsável. Acreditamos que a engenharia deve contribuir para um mundo mais sustentável.</p>
+                </div>
+            </div>
         </section>
+
         <section id="servicos-section">
             <h2 class="sessiontitle">Serviços</h2>
-            <button class="pre-btn"><img src="imgs/arrow.png" alt="anterior"></button>
-            <button class="nxt-btn"><img src="imgs/arrow.png" alt="proximo"></button>
-        
             <div class="product-container">
                 <div class="product-card">
+                    <button class="pre-btn" >&#139</button>
+                    <button class="nxt-btn">&#155</button>
                     <div class="product-image">
                         <img class="product-thumb" src="imgs/escada.webp" alt="escada metalica">
                     </div>
@@ -131,6 +167,7 @@
             </div>
         
         </section>
+
         <section id="contato-section">
             <h2 class="session-title">Contato</h2>
             <div id="contato-container">
@@ -159,10 +196,11 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <span>HUT Engenharia | CNPJ: 12345678/0001-75 | Todos os direitos reservados 2024</span>
-        </footer>
     </main>
+
+    <footer>
+        <span>HUT Engenharia | CNPJ: 12345678/0001-75 | Todos os direitos reservados 2024</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
