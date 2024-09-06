@@ -10,6 +10,8 @@
     --secundario: 'Oswald', sans-serif;
 
     --verde-primario: rgb(19, 82, 3);
+    --tom-branco: #EEEEEE;
+    --tom-preto: #061509;
 }
 
 * {
@@ -23,7 +25,9 @@ html {
 }
 
 body {
+    color: var(--tom-preto);
     padding-top: 50px;
+    background-color: var(--tom-branco);
 }
 
 /* Geral */
@@ -33,6 +37,7 @@ section {
 }
 
 h2 {
+    color: var(--tom-preto);
     margin: 30px 0;
     font-family: var(--secundario);
     font-weight: 350;
@@ -45,7 +50,7 @@ p {
 
 /* nav bar */
 nav {
-    background-color: white;
+    background-color: var(--tom-branco);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -77,6 +82,7 @@ nav ul {
 }
 
 nav li {
+    color: var(--tom-preto);
     font-family: var(--secundario);
     display: inline;
     padding: 5px 15px;
@@ -85,7 +91,7 @@ nav li {
 }
 
 nav li a {
-    color: black;
+    color: var(--tom-preto);
     text-decoration: none;
     text-align: center;
 }
@@ -111,7 +117,7 @@ nav li a:hover {
     z-index: 2;
     max-width: 90%;
     text-align: center;
-    color: white;
+    color: var(--tom-branco);
 }
 
 #container-texto-inicio h1 {
@@ -195,6 +201,7 @@ hr {
 }
 
 #sobre-section {
+    color: var(--tom-preto);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -318,7 +325,7 @@ hr {
 .pre-btn, 
 .nxt-btn{
     border: none;
-    color: black;
+    color: var(--tom-preto);
     transform: translateY(-50%);
     width: 10vw;
     height: 100%;
@@ -336,12 +343,12 @@ hr {
 }
 
 .pre-btn {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, var(--tom-branco) 100%);
     left: 0;
 }
 
 .nxt-btn {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--tom-branco) 100%);
     right: 0;
 }
 
@@ -391,7 +398,7 @@ hr {
 }
 
 #contato-container {
-    color: white;
+    color: var(--tom-branco);
     margin: auto;
     padding: 0;
     display: flex;
@@ -455,6 +462,6 @@ footer {
     font-weight: bold;
     width: 100%;
     padding: 5px;
-    color: white;
+    color: var(--tom-branco);
     background: rgb(12, 53, 2);
 }
