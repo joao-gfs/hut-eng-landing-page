@@ -31,6 +31,11 @@ function initializeSlider(){
     }
 }
 
+function resetSliderInterval() {
+    clearInterval(intervalId); // Clear the existing interval
+    intervalId = setInterval(nextSlide, 4000); // Start a new interval
+}
+
 function showSlide(index){
     if(index >= slides.length){
         slideIndex = 0;
@@ -48,9 +53,11 @@ function showSlide(index){
 function prevSlide(){
     slideIndex --;
     showSlide(slideIndex);
+    resetSliderInterval()
 }
 
 function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
+    resetSliderInterval()
 }

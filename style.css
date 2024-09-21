@@ -10,8 +10,8 @@
     --secundario: 'Oswald', sans-serif;
 
     --verde-primario: rgb(19, 82, 3);
-    --tom-branco: #EEEEEE;
-    --tom-preto: #061509;
+    --tom-branco: #FFF9EC;
+    --tom-preto: #1C1C1C;
 }
 
 * {
@@ -33,7 +33,7 @@ body {
 /* Geral */
 section {
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 }
 
 h2 {
@@ -148,7 +148,7 @@ nav li a:hover {
 .slider img {
     width: 100%;
     height: auto;
-    max-height: 850px;
+    max-height: 600px;
     display: none;
     object-fit: cover;
 }
@@ -174,7 +174,7 @@ img.displaySlide {
 }
 
 .slider button:hover {
-    opacity: 1;
+    opacity: 1; 
 }
 
 .slider-prev {
@@ -196,7 +196,7 @@ img.displaySlide {
 hr {
     width: 35%;
     min-width: 250px;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     border-top: 2px solid var(--verde-primario);
 }
 
@@ -227,7 +227,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-width: 300px;
+    min-width: 310px;
     padding: 10px;
     margin: 20px 0;
     flex: 1;
@@ -248,7 +248,7 @@ hr {
 }
 
 .info-box p {
-    font-size: 1.2em;
+    font-size: 1    em;
     margin-top: 10px;
     text-align: justify;
 }
