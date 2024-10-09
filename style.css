@@ -9,7 +9,7 @@
     --texto: 'PT Sans', Verdana, sans-serif;
     --secundario: 'Oswald', sans-serif;
 
-    --verde-primario: rgb(19, 82, 3);
+    --verde-primario: #135203;
     --tom-branco: #FFF9EC;
     --tom-preto: #1C1C1C;
 }
@@ -72,14 +72,14 @@ nav img {
 }
 
 #nav-titulo {
-    padding: 0 50px 0 20px;
+    padding: 0 30px 0 20px;
     font-size: 1.8em;
     font-weight: 800;
 }
 
 .nav-main {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 nav ul {
