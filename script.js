@@ -1,3 +1,9 @@
+// lista navbar
+function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+}
+
 const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')]
 const preBtn = [...document.querySelectorAll('.pre-btn')]

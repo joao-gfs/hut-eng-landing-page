@@ -9,15 +9,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li id="nav-titulo">HUT</li>
-                <li><a href="#inicio-section">Início</a></li>
-                <li><a href="#sobre-section">Sobre nós</a></li>
-                <li><a href="#servicos-section">Serviços</a></li>
-                <li><a href="#contato-section">Contato</a></li>
-            </ul>
-            <a href="https://wa.me/" target="_blank"><img src="imgs/whatsapp.svg" alt="Icone do whatsapp"></a>
+        <nav >
+            <div class="nav-main">
+                <span id="nav-titulo">HUT</span>
+                <ul class="nav-list">
+                    <li><a href="#inicio-section" onclick="toggleMenu()">Início</a></li>
+                    <li><a href="#sobre-section" onclick="toggleMenu()">Sobre nós</a></li>
+                    <li><a href="#servicos-section" onclick="toggleMenu()">Serviços</a></li>
+                    <li><a href="#contato-section" onclick="toggleMenu()">Contato</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776
+                </div>
+            </div>
+            
+            <a href="https://wa.me/+5535988948596" target="_blank"><img src="imgs/whatsapp.svg" alt="Icone do whatsapp"></a>
+            
         </nav>
     </header>
 
@@ -30,10 +37,10 @@
                 </div>
                 <div class="slider">
                     <div class="slides">
-                        <img src="imgs/projeto.jpg" alt="Grupo de engenheiros trabalhando em projeto" class="slide" loading="lazy">
-                        <img src="imgs/engenheiro.jpg" alt="Engenheiro analisando projeto" class="slide" loading="lazy">
-                        <img src="imgs/wield-cortado.jpg" alt="Processo de soldagem em construção metálica" class="slide" loading="lazy">
-                        <img src="imgs/estrutura.jpg" alt="Estrutura metálica de edifício" class="slide" loading="lazy">
+                        <img src="imgs/projeto.jpg" alt="Grupo de engenheiros trabalhando em projeto" width="800" height="600" class="slide" loading="lazy">
+                        <img src="imgs/engenheiro.jpg" alt="Engenheiro analisando projeto" width="800" height="600" class="slide" loading="lazy">
+                        <img src="imgs/wield-cortado.jpg" alt="Processo de soldagem em construção metálica" width="800" height="600" class="slide" loading="lazy">
+                        <img src="imgs/estrutura.jpg" alt="Estrutura metálica de edifício" width="800" height="600" class="slide" loading="lazy">
                     </div>
                     <button class="slider-prev" onclick="prevSlide()">&#139</button>
                     <button class="slider-next" onclick="nextSlide()">&#155</button>
@@ -175,22 +182,23 @@
                     <div id="div-contato">
                         <div>
                             <img class="info-icon" src="imgs/telephone.svg" alt="">
-                            <p><span class="contact-tag">Telefone: </span>(35) 3042-1921</p>
+                            <p><span class="contact-tag">Telefone: </span>Em breve</p>
                         </div>
                         <div>
                             <img class="info-icon" src="imgs/whatsapp-vazado.svg" alt="">
-                            <p><span class="contact-tag">Whatsapp: </span>(35) 96161-1921</p>
+                            <p><span class="contact-tag">Whatsapp: </span> (35) 988948596</p>
                         </div>
                         <div>
                             <img class="info-icon" src="imgs/email.svg" alt="">
-                            <p><span class="contact-tag">E-mail: </span>hutengenharia@gmail.com</p>
+                            <p><span class="contact-tag">E-mail: </span>contato@hutengenharia.com.br</p>
                         </div>
                         <p></p>
                     </div>
             
                     <div id="div-endereco">
-                        <p><span class="contact-tag">Endereço: </span>Av. José Verano da Silva, 1921<br>Bairro Cruzeiro, Itajubá-MG</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7376.523604780213!2d-45.4563398060812!3d-22.419169950442104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7cadb1247d9b%3A0xf74fb46a1edf2072!2sUniversidade%20Federal%20de%20Itajub%C3%A1%2C%20Campus%20Prof.%20Jos%C3%A9%20Rodrigues%20Seabra!5e0!3m2!1spt-BR!2sbr!4v1724678012326!5m2!1spt-BR!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p><span class="contact-tag">Endereço: </span>Rua Cordilheira dos Andes, 240<br>Distrito Industrial, Itajubá-MG, CEP 37.504-109</p>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.1444596782353!2d-45.47280202744455!3d-22.42358796853716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7b60527e5237%3A0x1507dc2342fc29f5!2sR.%20Cordilheira%20dos%20Andes%2C%20240%20-%20Distrito%20Industrial%2C%20Itajub%C3%A1%20-%20MG%2C%2037504-109!5e0!3m2!1spt-BR!2sbr!4v1728410336288!5m2!1spt-BR!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>
@@ -201,6 +209,6 @@
         <span>HUT Engenharia | CNPJ: 12345678/0001-75 | Todos os direitos reservados 2024</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
 </body>
 </html>
